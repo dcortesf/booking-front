@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $.ajax({
-        url: "https://backend-globalpaas-pro.appls.boae.paas.gsnetcloud.corp/courses/courses",
+        url: "https://backend-globalpaas-pro.appls.boae.paas.gsnetcloud.corp/courses",
         dataType: 'json'
     }).then(function(data) {
       console.log(data);
