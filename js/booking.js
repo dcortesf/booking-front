@@ -14,7 +14,7 @@ $(document).ready(function() {
       var value = $(this).val();
 
       $.ajax({
-          url: "https://backend-globalpaas-pro.appls.boae.paas.gsnetcloud.corp/courses/bookingbycourse/"+value,
+          url: "https://backend-globalpaas-pro.appls.boae.paas.gsnetcloud.corp/bookingbycourse/"+value,
           dataType: 'json'
       }).then(function(data) {
         console.log(data);
