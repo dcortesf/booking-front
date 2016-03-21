@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
 <!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
 <!--[if gt IE 9]><!-->	<html> <!--<![endif]-->
@@ -7,7 +6,7 @@
 
 		<!-- Basic -->
 		<meta charset="utf-8">
-		<title>Global PaaS | Booking</title>
+		<title>Global PaaS | Formación</title>
 		<meta name="keywords" content="cloud, computing, paas" />
 		<meta name="description" content="">
 		<meta name="author" content="Daniel Cortés">
@@ -17,7 +16,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		<!-- Web Fonts  -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Shadows+Into+Light" rel="stylesheet" type="text/css">
 
 		<!-- Libs CSS -->
 		<link rel="stylesheet" href="css/bootstrap.css">
@@ -52,7 +51,15 @@
 			<script src="vendor/respond.js"></script>
 		<![endif]-->
 
-
+		<!-- github OpenGraph Tags - Go to http://developers.github.com/ for more information.
+		<meta property="og:title" content="Porto Website Template."/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="http://www.crivos.com/themes/porto"/>
+		<meta property="og:image" content="http://www.crivos.com/themes/porto/"/>
+		<meta property="og:site_name" content="Porto"/>
+		<meta property="fb:app_id" content=""/>
+		<meta property="og:description" content="Porto - Responsive HTML5 Template"/>
+		-->
 
 	</head>
 	<body >
@@ -77,7 +84,6 @@
 					<div class="social-icons">
 						<ul class="social-icons">
 							<li class="github"><a href="https://gitlab.ci.gsnet.corp/openshift-v3/documentation" target="_blank" title="github">github</a></li>
-							<!--<li class="twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter">Twitter</a></li>-->
 						</ul>
 					</div>
 
@@ -92,14 +98,13 @@
 						<div class="row">
 							<div class="span12">
 								<ul class="breadcrumb">
-									<li><a href="index.html">Home</a> <span class="divider">/</span></li>
-									<li class="active">Formación</li>
+
 								</ul>
 							</div>
 						</div>
 						<div class="row">
 							<div class="span12">
-								<h2>Workshop</h2>
+								<h2>Gestión de Workshops</h2>
 							</div>
 						</div>
 					</div>
@@ -107,14 +112,105 @@
 
 				<div class="container">
 
-					<p class="lead">
-							<a href="workshops.html" target="blank">
-								Listado de workshops
-							</a>
-					</p>
+					<div class="row">
+						<ul class="portfolio-list sort-destination" data-sort-id="portfolio">
+
+							<li class="span2 isotope-item arq">
+								<div class="portfolio-item thumbnail">
+									<a href="workshops.html" class="thumb-info">
+										<img alt="" src="img/products/workshops.png">
+										<span class="thumb-info-title">
+											<span class="thumb-info-inner">Workshops</span>
+											<span class="thumb-info-type">Global PaaS</span>
+										</span>
+										<span class="thumb-info-action">
+											<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span>
+										</span>
+									</a>
+								</div>
+							</li>
+
+							<li class="span2 isotope-item arq">
+								<div class="portfolio-item thumbnail">
+									<a href="subscribes.html" class="thumb-info">
+										<img alt="" src="img/products/workshops.png">
+										<span class="thumb-info-title">
+											<span class="thumb-info-inner">Inscripciones</span>
+											<span class="thumb-info-type">Global PaaS</span>
+										</span>
+										<span class="thumb-info-action">
+											<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span>
+										</span>
+									</a>
+								</div>
+							</li>
+
+							<li class="span2 isotope-item arq">
+								<div class="portfolio-item thumbnail">
+									<a href="course_type.html" class="thumb-info">
+										<img alt="" src="img/products/workshops.png">
+										<span class="thumb-info-title">
+											<span class="thumb-info-inner">Tipos</span>
+											<span class="thumb-info-type">Global PaaS</span>
+										</span>
+										<span class="thumb-info-action">
+											<span title="Universal" href="#" class="thumb-info-action-icon"><i class="icon-link"></i></span>
+										</span>
+									</a>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+					<hr/>
+					<div class="row">
+						<center>
+							<h2>Información de Workshops Activos</h2>
+						</center>
+					</div>
+					<div class="row">
+						<div class="span4">
+							<p class="lead">
+								Ediciones activas
+							</p>
+
+
+							<select id="cursos" style="width: 275px;">
+								<option>
+									Selecciona un curso ...
+								</option>
+							</select>
+						</div>
+						<div class="span8">
+
+								<p class="lead">Listado de alumnos</p>
+
+							<table class="table" id="tablaAlumnos">
+								<thead>
+									<tr>
+										<th>
+
+										</th>
+										<th>
+
+										</th>
+										<th>
+
+										</th>
+									</tr>
+								</thead>
+								<tbody>
+
+								</tbody>
+							</table>
+
+						</div>
 
 				</div>
 
+				<!--- -->
+
+				</div>
 
 			</div>
 
@@ -129,14 +225,14 @@
 							<!--<h4>Ultimo Tweet</h4>
 							<div id="tweet" class="twitter" data-account-id="crivosthemes">
 								<p>Please wait...</p>
-							</div>
-						</div>-->
+							</div>-->
+						</div>
 												<div class="span3">
 							<!--<h4>Newsletter</h4>
 							<p>Mantente actualizado de los cambios normativos</p>
 
 							<div class="alert alert-success hidden" id="newsletterSuccess">
-								<strong>Bienvenido!</strong> Has sido aÃ±adido a la lista de correo de QA.
+								<strong>Bienvenido!</strong> Has sido añadido a la lista de correo de QA.
 							</div>
 
 							<div class="alert alert-error hidden" id="newsletterError"></div>
@@ -145,7 +241,7 @@
 								<div class="control-group">
 									<div class="input-append">
 										<input class="span2" placeholder="Email Address" name="email" id="email" type="text">
-										<button class="btn" type="submit">AÃ±adirme!</button>
+										<button class="btn" type="submit">Añadirme!</button>
 									</div>
 								</div>
 							</form>-->
@@ -154,8 +250,8 @@
 							<div class="contact-details">
 								<h4>Contacta</h4>
 								<ul class="contact">
-									<li><p><i class="icon-map-marker"></i> <strong>DirecciÃ³n:</strong> C/ Bernardino de Pantorba, 10. Madrid</p></li>
-									<li><p><i class="icon-phone"></i> <strong>TelÃ©fono: +34.656.28.40.41</strong> </p></li>
+									<li><p><i class="icon-map-marker"></i> <strong>Dirección:</strong> C/ Bernardino de Pantorba, 10. Madrid</p></li>
+									<li><p><i class="icon-phone"></i> <strong>Teléfono: +34.656.28.40.41</strong> </p></li>
 									<li><p><i class="icon-envelope"></i> <strong>Email:</strong> <a href="mailto:info@akeru-design.com">info@akeru-design.com</a></p></li>
 								</ul>
 							</div>
@@ -185,11 +281,11 @@
 							</div>
 							<div class="span4">
 								<nav id="sub-menu">
-									<!--<ul>
+									<ul>
 										<li><a href="#">FAQ's</a></li>
 										<li><a href="#">Sitemap</a></li>
 										<li><a href="#">Contacto</a></li>
-									</ul>-->
+									</ul>
 								</nav>
 							</div>
 						</div>
@@ -201,9 +297,10 @@
 		<!-- Libs -->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="vendor/jquery.js"><\/script>')</script>
+		<script src="js/index.js"></script>
 		<script src="vendor/jquery.easing.js"></script>
 		<script src="vendor/jquery.cookie.js"></script>
-		<!-- <script src="master/style-switcher/style.switcher.js"></script> --> <!-- Style Switcher -->
+		<script src="master/style-switcher/style.switcher.js"></script> <!-- Style Switcher -->
 		<script src="vendor/bootstrap.js"></script>
 		<script src="vendor/selectnav.js"></script>
 		<script src="vendor/twitterjs/twitter.js"></script>

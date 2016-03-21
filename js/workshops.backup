@@ -1,0 +1,23 @@
+$(document).ready(function() {
+    $.ajax({
+        url: "http://localhost:8080/types",
+        dataType: 'json'
+    }).then(function(data) {
+      console.log(data);
+      $.each(data, function(i){
+              //$('#tablaCursos tr:last').after('<tr><td style="text-align: center">'+data[i].ddate+'<td><td style="text-align:center"><a href="#" id="a'+data[i].idCourse+'" target="blank">OpenShift - Beginners</a></td></tr>');
+              $('#courseType').append('<option value="'+data[i].idCourseType+'">'+data[i].name+'</option>');
+            });
+    });
+
+    $.ajax({
+        url: "http://localhost:8080/levels",
+        dataType: 'json'
+    }).then(function(data) {
+      console.log(data);
+      $.each(data, function(i){
+              //$('#tablaCursos tr:last').after('<tr><td style="text-align: center">'+data[i].ddate+'<td><td style="text-align:center"><a href="#" id="a'+data[i].idCourse+'" target="blank">OpenShift - Beginners</a></td></tr>');
+              $('#courseLevel').append('<option value="'+data[i].idCourseLevel+'">'+data[i].name+'</option>');
+            });
+    });
+});

@@ -7,7 +7,7 @@
 
 		<!-- Basic -->
 		<meta charset="utf-8">
-		<title>Global PaaS | Booking</title>
+		<title>Global PaaS | Inscripciones</title>
 		<meta name="keywords" content="cloud, computing, paas" />
 		<meta name="description" content="">
 		<meta name="author" content="Daniel Cortés">
@@ -92,13 +92,13 @@
 						<div class="row">
 							<div class="span12">
 								<ul class="breadcrumb">
-									
+
 								</ul>
 							</div>
 						</div>
 						<div class="row">
 							<div class="span12">
-								<h2>Workshop</h2>
+								<h2>Workshops</h2>
 							</div>
 						</div>
 					</div>
@@ -106,37 +106,32 @@
 
 				<section>
 					<div class="container">
-						<div class="row">
-							<div class="span10">
-								<h2>Nuevo WorkShop</h2>
-								<div class="row controls">
-									<form method="POST">
-										<div class="span3 control-group">
-											<label>Fecha (yyyy-mm-dd)</label>
-											<input name="ddate" id="ddate" type="text" value="" maxlength="150" class="span2" required>
-										</div>
-										<div class="span1 control-group">
-											<label>Plazas</label>
-											<input name="places" id="places" type="text" value="" maxlength="2" class="span1" required>
-										</div>
-										<div class="span3 control-group">
-											<label>Tipo</label>
-											<select id="courseType"></select>
-										</div>
-										<div class="span3 control-group">
-											<label>Nivel</label>
-											<select id="courseLevel"></select>
-										</div>
 
-										</div>
-										<div class="btn-toolbar">
-											<input type="submit" id="enviar" value="Enviar" class="btn btn-primary btn-large">
-										</div>
-									</form>
-								</div>
+						<div class="row">
+							<div class="span4">
+								<h2>Ediciones</h2>
+
+
+								<select id="cursos" style="width: 275px;">
+									<option>
+										Selecciona un curso ...
+									</option>
+								</select>
+							</div>
+							<div class="span8">
+
+									<h2>El listado de alumnos</h2>
+
+								<table class="table" id="tablaAlumnos">
+									<tr>
+
+									</tr>
+
+								</table>
+
 							</div>
 
-						</div>
+					</div>
 				</div>
 				</section>
 
@@ -224,7 +219,7 @@
 
 		<!-- Libs -->
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-		<script src="js/new_workshop.js"></script>
+		<script src="js/subscribes.js"></script>
 		<script>window.jQuery || document.write('<script src="vendor/jquery.js"><\/script>')</script>
 		<script src="vendor/jquery.easing.js"></script>
 		<script src="vendor/jquery.cookie.js"></script>
